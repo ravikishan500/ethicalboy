@@ -1,0 +1,2344 @@
+;<!DOCTYPE html>  <html lang="hi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>MOD BY ETHICAL BOY 💓</title>  
+    <style>  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        }  body {  
+        background-color: #0f0f1a;  
+        color: #fff;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        min-height: 100vh;  
+        overflow: hidden;  
+    }  
+
+    /* Animated Splash Screen */  
+    #splash-screen {  
+        position: fixed;  
+        top: 0;  
+        left: 0;  
+        width: 100%;  
+        height: 100%;  
+        background: linear-gradient(45deg, #ff007f, #7f00ff, #00f0ff, #ff007f);  
+        background-size: 400% 400%;  
+        animation: gradientBG 10s ease infinite;  
+        display: flex;  
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center;  
+        z-index: 999;  
+        transition: opacity 0.5s ease, visibility 0.5s ease;  
+    }  
+
+    @keyframes gradientBG {  
+        0% { background-position: 0% 50%; }  
+        50% { background-position: 100% 50%; }  
+        100% { background-position: 0% 50%; }  
+    }  
+
+    .title-large {  
+        font-size: 3rem;  
+        font-weight: 900;  
+        text-align: center;  
+        color: #ffffff;  
+        text-shadow: 0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(0,0,0,0.3);  
+        margin-bottom: 30px;  
+        letter-spacing: 2px;  
+        animation: pulseText 2s ease-in-out infinite;  
+    }  
+
+    @keyframes pulseText {  
+        0%, 100% { transform: scale(1); }  
+        50% { transform: scale(1.05); }  
+    }  
+
+    .btn-start {  
+        padding: 15px 40px;  
+        font-size: 1.2rem;  
+        font-weight: bold;  
+        color: #7f00ff;  
+        background: #ffffff;  
+        border: none;  
+        border-radius: 60px;  
+        cursor: pointer;  
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);  
+        transition: all 0.3s ease;  
+    }  
+
+    .btn-start:hover {  
+        transform: translateY(-3px);  
+        box-shadow: 0 15px 25px rgba(0,0,0,0.3);  
+        background: #f0f0f0;  
+    }  
+
+    /* Main Dashboard (Hidden by Default) */  
+    #main-content {  
+        display: none;  
+        width: 100%;  
+        max-width: 500px;  
+        padding: 20px;  
+        text-align: center;  
+        opacity: 0;  
+        transform: scale(0.9);  
+        transition: all 0.5s ease;  
+    }  
+
+    .dashboard-title {  
+        font-size: 1.8rem;  
+        margin-bottom: 30px;  
+        color: #00f0ff;  
+        text-shadow: 0 0 10px rgba(0,240,255,0.3);  
+    }  
+
+    .link-button {  
+        width: 100%;  
+        padding: 18px 20px;  
+        margin-bottom: 20px;  
+        font-size: 1.1rem;  
+        font-weight: 600;  
+        color: #fff;  
+        background: linear-gradient(135deg, #1e1e38, #2a2a52);  
+        border: 2px solid #3f3f74;  
+        border-radius: 15px;  
+        cursor: pointer;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        gap: 10px;  
+        transition: all 0.3s ease;  
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);  
+        user-select: none;  
+    }  
+
+    .link-button:hover {  
+        border-color: #ff007f;  
+        transform: translateY(-2px);  
+        box-shadow: 0 8px 20px rgba(255, 0, 127, 0.2);  
+        background: linear-gradient(135deg, #252547, #353566);  
+    }  
+
+    /* Toast Notification for Copy Alert */  
+    .toast {  
+        position: fixed;  
+        bottom: -50px;  
+        left: 50%;  
+        transform: translateX(-50%);  
+        background: #00ff66;  
+        color: #000;  
+        padding: 12px 30px;  
+        border-radius: 30px;  
+        font-weight: bold;  
+        box-shadow: 0 5px 15px rgba(0,255,102,0.4);  
+        transition: bottom 0.3s ease;  
+        z-index: 1000;  
+        white-space: nowrap;  
+    }  
+
+    .toast.show {  
+        bottom: 40px;  
+    }  
+</style>
+
+</head>  
+<body>  <!-- 1. Colorful Animated Splash Screen -->  
+<div id="splash-screen">  
+    <h1 class="title-large">MOD BY ETHICAL BOY💓</h1>  
+    <button class="btn-start" onclick="startApp()">START NOW</button>  
+</div>  
+
+<!-- 2. Main Menu Dashboard -->  
+<div id="main-content">  
+    <h2 class="dashboard-title">SELECT OPTION</h2>  
+      
+    <!-- Button 1 -->  
+    <button class="link-button" onclick="handleButtonClick('https://pwthor.live/study/batches')">  
+        PHYSICS WALLAH BY ETHICAL BOY 💓  
+    </button>  
+
+    <!-- Button 2 -->  
+    <button class="link-button" onclick="handleButtonClick('https://targetboard-studyapkmod.vercel.app/')">  
+        TARGET BOARD BY ETHICAL BOY 💓  
+    </button>  
+
+    <!-- Button 3 -->  
+    <button class="link-button" onclick="handleButtonClick('https://disha-studyapkmod.vercel.app/')">  
+        DISHA ONLINE MOD BY ETHICAL BOY 💓  
+    </button> 
+
+    <!-- Button 4 -->
+    <button class="link-button" onclick="handleButtonClick('https://nexttopper.probrosystemset.workers.dev/')"> 
+        NEXT TOPPER BY ETHICAL BOY💓 
+    </button>
+
+    <!-- Button 5 -->
+    <button class="link-button" onclick="handleButtonClick('https://selectionwayy.vercel.app')"> 
+        SELECTION WAY BY ETHICAL BOY 💓
+    </button>
+
+    <!-- Button 6 -->
+    <button class="link-button" onclick="handleButtonClick('https://studyapkmodkgs.vercel.app/')">
+         KGS V1 BY ETHICAL BOY  💓 
+    </button>
+
+    <!-- Button 7 -->
+    <button class="link-button" onclick="handleButtonClick('https://unacademypro.probrosystemset.workers.dev/')">
+         UNACADEMY V1 BY ETHICAL BOY 💓  
+    </button>
+
+    <!-- Button 8 -->
+    <button class="link-button" onclick="handleButtonClick('https://studyapkmod-vidyagramx.vercel.app/')">
+      VIDYAGRAM BY ETHICAL BOY 💓
+   </button>  
+
+   <!-- Button 9 -->
+   <button class="link-button" onclick="handleButtonClick('https://sachinacademy.netlify.app/')">
+     SACHIN ACADEMY BY ETHICAL BOY 💓
+   </button> 
+</div>  
+<!-- Toast Notification Element -->  
+<div id="toast" class="toast">Link Copied & Opening Website...</div>  
+
+<script>  
+    // Start Now click karne par dashboard dikhane ke liye  
+    function startApp() {  
+        const splash = document.getElementById('splash-screen');  
+        const content = document.getElementById('main-content');  
+          
+        splash.style.opacity = '0';  
+        splash.style.visibility = 'hidden';  
+          
+        content.style.display = 'block';  
+        setTimeout(() => {  
+            content.style.opacity = '1';  
+            content.style.transform = 'scale(1)';  
+        }, 50);  
+    }  
+
+    // Link copy karne aur 100% bina block hue open karne ka function  
+    function handleButtonClick(url) {  
+        // 1. URL automatic copy karne ka advance logic (Sabhi environments ke liye)  
+        try {  
+            if (navigator.clipboard && navigator.clipboard.writeText) {  
+                navigator.clipboard.writeText(url);  
+            } else {  
+                // Backup Method (Agar system clipboard security block kare toh ye kaam karega)  
+                const textarea = document.createElement("textarea");  
+                textarea.value = url;  
+                textarea.style.position = "fixed";   
+                textarea.style.left = "-9999px";   
+                document.body.appendChild(textarea);  
+                textarea.select();  
+                document.execCommand("copy");  
+                document.body.removeChild(textarea);  
+            }  
+        } catch (err) {  
+            console.log("Copy process bypassed or restricted.");  
+        }  
+
+        // 2. Notification pop-up dikhayein  
+        showToast();  
+
+        // 3. Redirection (window.location.href se link block nahi hoti aur usi screen me load ho jati hai)  
+        setTimeout(() => {  
+            window.location.href = url;  
+        }, 400);   
+    }  
+
+    // Custom alert pop-up manage karne ke liye  
+    function showToast() {  
+        const toast = document.getElementById('toast');  
+        toast.classList.add('show');  
+        setTimeout(() => {  
+            toast.classList.remove('show');  
+        }, 2000);  
+    }  
+</script>
+</body>  
+</html>  
+    <!-- 3. Telegram Popup Section (Purane HTML ke thik niche jodna hai) -->  
+    <style>  
+        #telegram-popup {  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background: rgba(10, 10, 26, 0.85);  
+            backdrop-filter: blur(12px);  
+            -webkit-backdrop-filter: blur(12px);  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            z-index: 10000; /* Splash screen se bhi upar rakhne ke liye */  
+            opacity: 1;  
+            visibility: visible;  
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);  
+        }  .popup-box {  
+        background: linear-gradient(145deg, #161630, #0c0c1d);  
+        border: 2px solid #0088cc;  
+        box-shadow: 0 0 30px rgba(0, 136, 204, 0.4), inset 0 0 15px rgba(0, 136, 204, 0.1);  
+        border-radius: 24px;  
+        width: 90%;  
+        max-width: 400px;  
+        padding: 35px 25px;  
+        text-align: center;  
+        transform: scale(1);  
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+        position: relative;  
+        overflow: hidden;  
+    }  
+
+    /* Rangeen & Animated Telegram Logo Area */  
+    .logo-container {  
+        position: relative;  
+        width: 90px;  
+        height: 90px;  
+        margin: 0 auto 25px auto;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+    }  
+
+    .logo-glow {  
+        position: absolute;  
+        width: 100%;  
+        height: 100%;  
+        background: radial-gradient(circle, #0088cc 0%, transparent 70%);  
+        animation: pulseGlow 2s infinite alternate;  
+        z-index: 1;  
+    }  
+
+    .tg-icon {  
+        width: 80px;  
+        height: 80px;  
+        background: linear-gradient(135deg, #229ed9, #0088cc, #006699);  
+        border-radius: 50%;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        box-shadow: 0 8px 20px rgba(0, 136, 204, 0.5);  
+        z-index: 2;  
+        animation: floatIcon 3s ease-in-out infinite;  
+    }  
+    .tg-icon svg {  
+        width: 45px;  
+        height: 45px;  
+        fill: white;  
+        /* Telegram paper plane style adjustments */  
+        transform: translate(-3px, 2px);   
+    }  
+
+    @keyframes pulseGlow {  
+        0% { transform: scale(0.9); opacity: 0.5; }  
+        100% { transform: scale(1.3); opacity: 0.9; }  
+    }  
+
+    @keyframes floatIcon {  
+        0%, 100% { transform: translateY(0); }  
+        50% { transform: translateY(-8px); }  
+    }  
+
+    .popup-title {  
+        font-size: 1.6rem;  
+        font-weight: 800;  
+        color: #ffffff;  
+        margin-bottom: 10px;  
+        letter-spacing: 1px;  
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);  
+    }  
+
+    .popup-desc {  
+        font-size: 0.95rem;  
+        color: #a0a0c0;  
+        margin-bottom: 25px;  
+        line-height: 1.4;  
+    }  
+
+    /* Telegram Action Button */  
+    .btn-telegram {  
+        width: 100%;  
+        padding: 16px 20px;  
+        font-size: 1.1rem;  
+        font-weight: bold;  
+        color: #fff;  
+        background: linear-gradient(90deg, #0088cc, #24a1de);  
+        border: none;  
+        border-radius: 50px;  
+        cursor: pointer;  
+        box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);  
+        transition: all 0.3s ease;  
+        text-transform: uppercase;  
+        letter-spacing: 0.5px;  
+        display: inline-block;  
+        text-decoration: none;  
+        margin-bottom: 20px;  
+    }  
+
+    .btn-telegram:hover {  
+        transform: translateY(-2px);  
+        box-shadow: 0 10px 25px rgba(0, 136, 204, 0.6);  
+        background: linear-gradient(90deg, #24a1de, #0088cc);  
+    }  
+
+    /* Continue Small Button */  
+    .btn-continue {  
+        background: transparent;  
+        border: none;  
+        color: #707090;  
+        font-size: 0.9rem;  
+        font-weight: 600;  
+        cursor: pointer;  
+        transition: color 0.2s ease;  
+        text-decoration: underline;  
+        letter-spacing: 0.5px;  
+    }  
+
+    .btn-continue:hover {  
+        color: #0088cc;  
+    }  
+</style>  
+
+<!-- Popup Markup Structure -->  
+<div id="telegram-popup">  
+    <div class="popup-box" id="popup-box">  
+        <div class="logo-container">  
+            <div class="logo-glow"></div>  
+            <div class="tg-icon">  
+                <!-- High Quality Vector Telegram Logo -->  
+                <svg viewBox="0 0 24 24">  
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15.75-.75 4.35-1.06 6.04-.13.72-.4 1.16-.66 1.18-.57.05-1.01-.38-1.56-.74-.86-.57-1.35-.92-2.18-1.47-.96-.64-.34-1 .21-1.57.14-.15 2.64-2.42 2.69-2.63.01-.03.01-.13-.05-.18-.06-.05-.14-.03-.2-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .3z"/>  
+                </svg>  
+            </div>  
+        </div>  
+          
+        <h3 class="popup-title">👋 WELCOME TO MOD BY ETHICAL BOY ✅</h3>  
+        <p class="popup-desc">.हैलो दोस्तो,💓
+
+               WELCOME TO OUR APP ♥️🎥 
+
+       इस ऐप के अंदर आप सभी को सभी Study Platform के बैचेस फ्री मिलेंगे 🎉
+
+" ऐप की पूरी जानकारी के लिए हमारे टेलीग्राम चैनल से जुड़ जाइए " ❤️👍</p> 
+        <!-- Telegram Link (Apna Link 'https://t.me/mod_by_ethicalboy_45' ki jagah daal dein) -->  
+        <a href="https://t.me/mod_by_ethicalboy_45" target="_blank" class="btn-telegram">JOIN OUR TELEGRAM CHANNEL</a>  
+          
+        <br>  
+        <button class="btn-continue" onclick="closeTelegramPopup()">Continue to App</button>  
+    </div>  
+</div>  
+
+<script>  
+    // Telegram popup ko close karke screen clear karne ke liye  
+    function closeTelegramPopup() {  
+        const popup = document.getElementById('telegram-popup');  
+        const box = document.getElementById('popup-box');  
+          
+        // Premium exit animation effect  
+        box.style.transform = 'scale(0.8)';  
+        popup.style.opacity = '0';  
+        popup.style.visibility = 'hidden';  
+          
+        // 500ms baad screen se element ko remove karne ke liye takia clicks me dikkat na ho  
+        setTimeout(() => {  
+            popup.style.display = 'none';  
+        }, 500);  
+    }  
+</script>  
+<!-- 4. Modern Notice Box Section (Purane HTML ke thik niche jodna hai) -->  
+<style>  
+    /* Notice Box ko buttons ke niche sahi jagah par adjust karne ke liye */  
+    .notice-container {  
+        margin-top: 35px;  
+        background: linear-gradient(145deg, #161630, #111124);  
+        border: 2px solid #ff007f;  
+        box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);  
+        border-radius: 15px;  
+        padding: 18px 15px;  
+        text-align: left;  
+        position: relative;  
+        overflow: hidden;  
+        width: 100%;  
+    }  
+
+    .notice-header {  
+        font-size: 1.15rem;  
+        font-weight: bold;  
+        color: #ff007f;  
+        margin-bottom: 12px;  
+        border-bottom: 1px solid #3f3f74;  
+        padding-bottom: 8px;  
+        letter-spacing: 0.5px;  
+    }  
+        .notice-body {  
+        font-size: 0.95rem;  
+        color: #e2e2ff;  
+        line-height: 1.6;  
+        font-weight: 500;  
+    }  
+</style>  
+
+<script>  
+    // Main page khulte hi Notice Box ko automatic buttons ke niche fit karne ka logic  
+    document.addEventListener("DOMContentLoaded", function() {  
+        // Ek naya notice elements grid banayein  
+        var noticeDiv = document.createElement("div");  
+        noticeDiv.className = "notice-container";  
+          
+        // Aapka bataya hua text aur custom design content  
+        noticeDiv.innerHTML = `  
+            <div class="notice-header">IMPORTANT 🚨</div>  
+            <div class="notice-body">  
+                आपलोग जब किसी भी ऐप पर क्लिक करते है तो उसका लिंक आपके कीबोर्ड में ऑटोमैटिक कॉपी हो जाता है अगर कोई content ऐप में काम ना करे तो कृपया app को close करके वो कॉपी किया हुआ लिंक chrome में जाकर पेस्ट कर दें उसके बाद सभी लिंक वर्क करने लगेगी  
+            </div>  
+        `;  
+          
+        // Dashboard page load hote hi ise buttons ke niche insert karein  
+        var checkDashboard = setInterval(function() {  
+            var mainHub = document.getElementById("main-content");  
+            if (mainHub) {  
+                mainHub.appendChild(noticeDiv);  
+                clearInterval(checkDashboard);  
+            }  
+        }, 100);  
+    });  
+</script>  
+<!-- 5. Telegram Popup Notice Box Section (Purane HTML ke thik niche jodna hai) -->  
+<style>  
+    /* Telegram Popup ke andar Notice Box ki premium design */  
+    .tg-notice-box {  
+        background: rgba(255, 255, 255, 0.05);  
+        border: 1.5px dashed #0088cc;  
+        border-radius: 12px;  
+        padding: 12px;  
+        margin-bottom: 20px;  
+        text-align: left;  
+        width: 100%;  
+    }  
+
+    .tg-notice-header {  
+        font-size: 1rem;  
+        font-weight: bold;  
+        color: #0088cc;  
+        margin-bottom: 6px;  
+        display: block;  
+    }  
+
+    .tg-notice-body {  
+        font-size: 0.88rem;  
+        color: #e2e2ff;  
+        line-height: 1.5;  
+        font-weight: 500;  
+        display: block;  
+    }  
+</style>  
+
+<script>  
+    // Popup khulte hi automatic button ke upar box lagane ka logic  
+    document.addEventListener("DOMContentLoaded", function() {  
+        var tgNoticeDiv = document.createElement("div");  
+        tgNoticeDiv.className = "tg-notice-box";  
+          
+        // Aapka bataya hua Hindi text  
+        tgNoticeDiv.innerHTML = `  
+            <span class="tg-notice-header">IMPORTANT 🚨</span>  
+            <span class="tg-notice-body">  
+                कृपया app के बारे में सही जानकारी और इसके नए फीचर्स जानने के लिए तथा App Instruction जानने के लिए हमारे टेलीग्राम चैनल से जरूर जुड़िये 💓✅  
+            </span>  
+        `;  
+          
+        // Telegram wale main button ke thik upar ise set karne ke liye loop  
+        var checkPopup = setInterval(function() {  
+            var tgButton = document.querySelector(".btn-telegram");  
+            if (tgButton && tgButton.parentNode) {  
+                tgButton.parentNode.insertBefore(tgNoticeDiv, tgButton);  
+                clearInterval(checkPopup);  
+            }  
+        }, 100);  
+    });  
+</script>
+<style>
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    min-height: 100vh;
+}
+</style>
+<!-- Purane code ko hatakar is naye code ko sabse niche paste karein -->
+<style>
+  /* 1. App ka poora background badalna aur chalne wala nature effect */
+  body, html, .container { 
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwyDZ-VH6h0TYWtLET7RtxuevoFzyvtYxVc1tPRZJ2Q&s=10') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    animation: backgroundMove 25s linear infinite alternate !important;
+  }
+
+  @keyframes backgroundMove {
+    0% { background-position: center 0%; }
+    100% { background-position: center 100%; }
+  }
+
+  /* 2. Sabhi buttons ke liye common style aur smooth animation set up */
+  button, .btn, [role="button"], div[onclick], a {
+    position: relative !important;
+    display: block !important;
+    width: 90% !important;
+    margin: 15px auto !important;
+    padding: 15px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border-radius: 12px !important;
+    color: #ffffff !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    cursor: pointer !important;
+    z-index: 1 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* 3. Number ke hisaab se har ek button ko apna alag colorful gradient aur glow dena */
+
+  /* Pehla Button: PHYSICS WALLAH (Neon Cyan & Blue) */
+  button:nth-of-type(1), .btn:nth-child(1), div[onclick]:nth-child(1) {
+    background: linear-gradient(45deg, #0052d4, #4364f7, #6fb1fc) !important;
+    box-shadow: 0 0 15px rgba(67, 100, 247, 0.5) !important;
+  }
+
+  /* Dusra Button: TARGET BOARD (Fire Red & Orange) */
+  button:nth-of-type(2), .btn:nth-child(2), div[onclick]:nth-child(2) {
+    background: linear-gradient(45deg, #f857a6, #ff5858) !important;
+    box-shadow: 0 0 15px rgba(255, 88, 88, 0.5) !important;
+  }
+
+  /* Tisra Button: DISHA ONLINE (Silver & Yellow) */
+  button:nth-of-type(3), .btn:nth-child(3), div[onclick]:nth-child(3) {
+    background: linear-gradient(45deg, #f12711, #f5af19) !important;
+    box-shadow: 0 0 15px rgba(245, 175, 25, 0.5) !important;
+  }
+
+  /* Chautha Button: NEXT TOPPER (Magic Purple & Violet) */
+  button:nth-of-type(4), .btn:nth-child(4), div[onclick]:nth-child(4) {
+    background: linear-gradient(45deg, #7474bf, #348ac7) !important;
+    box-shadow: 0 0 15px rgba(116, 116, 191, 0.5) !important;
+  }
+
+  /* Panchwa Button: SELECTION WAY (Electric Green) */
+  button:nth-of-type(5), .btn:nth-child(5), div[onclick]:nth-child(5) {
+    background: linear-gradient(45deg, #11998e, #38ef7d) !important;
+    box-shadow: 0 0 15px rgba(56, 239, 125, 0.5) !important;
+  }
+
+  /* Chatha Button: KGS V1 (Hot Pink & Magenta) */
+  button:nth-of-type(6), .btn:nth-child(6), div[onclick]:nth-child(6) {
+    background: linear-gradient(45deg, #ff00cc, #333399) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 204, 0.5) !important;
+  }
+  /* 4. Hover karne par button thoda bada ho aur chamke */
+  button:hover, .btn:hover, div[onclick]:hover {
+    transform: scale(1.05) translateY(-3px) !important;
+    filter: brightness(1.2) !important;
+  }
+</style>
+<style>
+  .unacademy-rainbow-button {
+    background: linear-gradient(
+      90deg,
+      #ff00cc,
+      #ff4b2b,
+      #ffcc00,
+      #00d084,
+      #00c9ff,
+      #7b2cff,
+      #ff00cc
+    ) !important;
+    background-size: 400% 100% !important;
+    animation: unacademyRainbow 5s linear infinite,
+               unacademyGlow 1.5s ease-in-out infinite !important;
+    color: #ffffff !important;
+  }
+
+  @keyframes unacademyRainbow {
+    from { background-position: 0% 50%; }
+    to   { background-position: 400% 50%; }
+  }
+
+  @keyframes unacademyGlow {
+    50% { box-shadow: 0 0 20px #ff00cc; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll("a, button").forEach(function (button) {
+    if (button.textContent.toUpperCase().includes("UNACADEMY")) {
+      button.classList.add("unacademy-rainbow-button");
+    }
+  });
+</script>
+<style>
+  .vidyagram-rainbow {
+    background: linear-gradient(
+      90deg,
+      #ff00cc,
+      #ff4b2b,
+      #ffcc00,
+      #00d084,
+      #00c9ff,
+      #7b2cff,
+      #ff00cc
+    ) !important;
+    background-size: 400% 100% !important;
+    color: #fff !important;
+    animation: vidyagramColors 5s linear infinite,
+               vidyagramGlow 1.5s ease-in-out infinite !important;
+  }
+
+  @keyframes vidyagramColors {
+    from { background-position: 0% 50%; }
+    to   { background-position: 400% 50%; }
+  }
+
+  @keyframes vidyagramGlow {
+    50% { box-shadow: 0 0 20px #ff00cc; }
+  }
+</style>
+
+<script>
+  const vidyagramButtons = Array.from(
+    document.querySelectorAll("a, button")
+  ).filter(function (el) {
+    return el.textContent.toUpperCase().includes("VIDYAGRAM");
+  });
+
+  vidyagramButtons.forEach(function (button) {
+    button.classList.add("vidyagram-rainbow");
+  });
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- अनोखे बैकग्राउंड लिक्विड एलिमेंट्स -->
+<div class="rk-unique-bg-container">
+    <div class="rk-particle rk-p1"></div>
+    <div class="rk-particle rk-p2"></div>
+    <div class="rk-particle rk-p3"></div>
+    <div class="rk-particle rk-p4"></div>
+</div>
+
+<style>
+/* ⚠️ यह कोड स्काई-ब्लू और पर्पल रंग बदलने वाला नया एनिमेशन खुद तैयार करेगा */
+#splash-screen {  
+    background: linear-gradient(45deg, #00d2ff, #7f00ff, #3a1c71, #00d2ff) !important;  
+    background-size: 400% 400% !important;  
+    animation: rkNewGradientBG 10s ease infinite !important;  
+}  
+
+@keyframes rkNewGradientBG {  
+    0% { background-position: 0% 50%; }  
+    50% { background-position: 100% 50%; }  
+    100% { background-position: 0% 50%; }  
+}  
+
+/* शुरुआत में इसे छुपा कर रखेंगे */
+.rk-unique-bg-container {
+    display: none !important;
+}
+
+/* यूनिक एनिमेशन लेयर की स्टाइलिंग */
+.rk-unique-bg-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1 !important;
+    pointer-events: none;
+    display: block !important;
+}
+
+/* तैरते हुए नियॉन लिक्विड पार्टिकल्स */
+.rk-particle {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05)) !important;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%; 
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    animation: rkUniqueFloat 20s infinite linear;
+}
+
+.rk-p1 { width: 130px; height: 130px; top: 12%; left: -40px; animation-duration: 18s; }
+.rk-p2 { width: 160px; height: 160px; bottom: 18%; right: -50px; animation-duration: 25s; }
+.rk-p3 { width: 50px; height: 50px; top: 45%; left: 15%; animation-duration: 15s; }
+.rk-p4 { width: 70px; height: 70px; top: 25%; right: 10%; animation-duration: 22s; }
+
+@keyframes rkUniqueFloat {
+    0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.2; }
+    50% { transform: translateY(-35px) rotate(180deg) scale(1.1); opacity: 0.5; box-shadow: 0 0 25px rgba(255, 255, 255, 0.25); }
+    100% { transform: translateY(0) rotate(360deg) scale(1); opacity: 0.2; }
+}
+
+/* बटन धड़कने वाला प्रीमियम एनिमेशन */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    function checkAndApplyStyles() {
+        var bgContainer = document.querySelector('.rk-unique-bg-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            // 1. बटन एनीमेशन चालू करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+            }
+            
+            // 2. पार्टिकल्स को स्प्लैश स्क्रीन के अंदर डालो ताकि वह पीछे तैरें
+            if(bgContainer && splashScreen && bgContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(bgContainer, splashScreen.firstChild);
+            }
+            
+            if(bgContainer) bgContainer.className = 'rk-unique-bg-container rk-unique-bg-active';
+        } else {
+            if(bgContainer) {
+                bgContainer.className = 'rk-unique-bg-container';
+                bgContainer.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", checkAndApplyStyles);
+    document.addEventListener("click", function() {
+        setTimeout(checkAndApplyStyles, 100);
+    });
+    setInterval(checkAndApplyStyles, 400);
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- रंग-बिरंगे छोटे बबल्स का कंटेनर -->
+<div class="rk-bubble-container">
+    <div class="rk-bubble rk-red" style="left: 10%; width: 15px; height: 15px; animation-delay: 0s; animation-duration: 8s;"></div>
+    <div class="rk-bubble rk-green" style="left: 25%; width: 22px; height: 22px; animation-delay: 2s; animation-duration: 11s;"></div>
+    <div class="rk-bubble rk-yellow" style="left: 40%; width: 12px; height: 12px; animation-delay: 1s; animation-duration: 7s;"></div>
+    <div class="rk-bubble rk-pink" style="left: 55%; width: 25px; height: 25px; animation-delay: 4s; animation-duration: 13s;"></div>
+    <div class="rk-bubble rk-red" style="left: 70%; width: 18px; height: 18px; animation-delay: 3s; animation-duration: 9s;"></div>
+    <div class="rk-bubble rk-green" style="left: 85%; width: 14px; height: 14px; animation-delay: 5s; animation-duration: 8s;"></div>
+    <div class="rk-bubble rk-yellow" style="left: 20%; width: 20px; height: 20px; animation-delay: 6s; animation-duration: 10s;"></div>
+    <div class="rk-bubble rk-pink" style="left: 65%; width: 16px; height: 16px; animation-delay: 2s; animation-duration: 9s;"></div>
+    <div class="rk-bubble rk-red" style="left: 45%; width: 24px; height: 24px; animation-delay: 7s; animation-duration: 12s;"></div>
+    <div class="rk-bubble rk-green" style="left: 90%; width: 10px; height: 10px; animation-delay: 1s; animation-duration: 6s;"></div>
+</div>
+
+<style>
+/* डिफ़ॉल्ट रूप से बबल्स हर जगह छिपे रहेंगे */
+.rk-bubble-container {
+    display: none !important;
+}
+
+/* सिर्फ वेलकम पेज (Splash Screen) पर एक्टिव होने के लिए */
+.rk-bubble-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2 !important; /* आपके रंग बदलने वाले बैकग्राउंड के ऊपर दिखने के लिए */
+    pointer-events: none;
+    display: block !important;
+}
+
+/* बबल्स की कॉमन स्टाइलिंग (चमकते हुए कांच जैसे गोले) */
+.rk-bubble {
+    position: absolute;
+    bottom: -50px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: rkBubbleRise 10s infinite linear;
+    filter: blur(0.5px);
+}
+
+/* अलग-अलग रंगों के नियॉन शेड्स */
+.rk-red {
+    background: radial-gradient(circle, rgba(255, 59, 48, 0.6) 0%, rgba(255, 59, 48, 0.1) 70%) !important;
+    border: 1px solid rgba(255, 59, 48, 0.4) !important;
+    box-shadow: 0 0 12px rgba(255, 59, 48, 0.4);
+}
+.rk-green {
+    background: radial-gradient(circle, rgba(52, 199, 89, 0.6) 0%, rgba(52, 199, 89, 0.1) 70%) !important;
+    border: 1px solid rgba(52, 199, 89, 0.4) !important;
+    box-shadow: 0 0 12px rgba(52, 199, 89, 0.4);
+}
+.rk-yellow {
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.6) 0%, rgba(255, 204, 0, 0.1) 70%) !important;
+    border: 1px solid rgba(255, 204, 0, 0.4) !important;
+    box-shadow: 0 0 12px rgba(255, 204, 0, 0.4);
+}
+.rk-pink {
+    background: radial-gradient(circle, rgba(255, 45, 85, 0.6) 0%, rgba(255, 45, 85, 0.1) 70%) !important;
+    border: 1px solid rgba(255, 45, 85, 0.4) !important;
+    box-shadow: 0 0 12px rgba(255, 45, 85, 0.4);
+}
+
+/* नीचे से ऊपर तैरने और हल्का डोलने (Sway) का एनीमेशन */
+@keyframes rkBubbleRise {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-110vh) translateX(30px);
+        opacity: 0;
+    }
+}
+
+/* बटन का धड़कने (Pulse) वाला पुराना एनीमेशन जो आपको पसंद आया था */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    function manageBubblesAndButtons() {
+        var bubbleContainer = document.querySelector('.rk-bubble-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        // अगर स्क्रीन पर START NOW बटन दिख रहा है (यानी वेलकम पेज खुला है)
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            
+            // 1. बटन एनीमेशन लागू करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+            }
+            
+            // 2. बबल्स को स्प्लैश स्क्रीन के अंदर फिट करें ताकि वह बैकग्राउंड के ऊपर दिखें
+            if(bubbleContainer && splashScreen && bubbleContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(bubbleContainer, splashScreen.firstChild);
+            }
+            
+            if(bubbleContainer) bubbleContainer.className = 'rk-bubble-container rk-bubble-active';
+        } else {
+            // टेलीग्राम या अन्य पेज खुलने पर तुरंत छुपा दें
+            if(bubbleContainer) {
+                bubbleContainer.className = 'rk-bubble-container';
+                bubbleContainer.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", manageBubblesAndButtons);
+    document.addEventListener("click", function() {
+        setTimeout(manageBubblesAndButtons, 100);
+    });
+    setInterval(manageBubblesAndButtons, 400);
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- सिर्फ वेलकम पेज के लिए रंग-बिरंगे बबल्स का कंटेनर -->
+<div class="rk-bubble-container">
+    <div class="rk-bubble rk-red" style="left: 12%; width: 14px; height: 14px; animation-delay: 0s; animation-duration: 7s;"></div>
+    <div class="rk-bubble rk-green" style="left: 28%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 10s;"></div>
+    <div class="rk-bubble rk-yellow" style="left: 45%; width: 12px; height: 12px; animation-delay: 1s; animation-duration: 6s;"></div>
+    <div class="rk-bubble rk-pink" style="left: 60%; width: 24px; height: 24px; animation-delay: 4s; animation-duration: 12s;"></div>
+    <div class="rk-bubble rk-red" style="left: 75%; width: 16px; height: 16px; animation-delay: 3s; animation-duration: 8s;"></div>
+    <div class="rk-bubble rk-green" style="left: 88%; width: 15px; height: 15px; animation-delay: 5s; animation-duration: 7s;"></div>
+</div>
+
+<style>
+/* ⚠️ यह कोड केवल #splash-screen (वेलकम पेज) को टारगेट करेगा और बाकी किसी पेज की इमेज नहीं हटाएगा */
+#splash-screen {  
+    background-image: none !important; /* सिर्फ इस स्क्रीन से इमेज हटेगी, बाकी पेजों पर हितमैन रहेगा */
+    background: #ff3b30 !important; 
+    animation: rkSplashColorsOnly 15s ease infinite !important; /* 5 रंगों का स्मूथ बदलाव */
+    position: fixed !important;
+    z-index: 9999 !important;
+}  
+
+/* 🔴 🟢 ⚪ 🟡 🔮 सिर्फ वेलकम पेज के लिए ऑटोमैटिक कलर चेंजिंग लूप */
+@keyframes rkSplashColorsOnly {  
+    0%, 100% { background: #ff3b30; } /* लाल (Red) */
+    20% { background: #4cd964; }      /* हरा (Green) */
+    40% { background: #ffffff; }      /* सफेद (White) */
+    60% { background: #ffcc00; }      /* पीला (Yellow) */
+    80% { background: #ff2d55; }      /* गुलाबी (Pink) */
+}  
+
+/* शुरुआत में बबल्स छिपे रहेंगे */
+.rk-bubble-container {
+    display: none !important;
+}
+
+/* सिर्फ वेलकम पेज पर बबल्स एक्टिव करने के लिए */
+.rk-bubble-active {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 1 !important; 
+    pointer-events: none;
+    display: block !important;
+}
+
+.rk-bubble {
+    position: absolute;
+    bottom: -40px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+    animation: rkBubbleRiseUp 9s infinite linear;
+}
+
+.rk-red { background: radial-gradient(circle, rgba(255,59,48,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,59,48,0.3) !important; }
+.rk-green { background: radial-gradient(circle, rgba(52,199,89,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(52,199,89,0.3) !important; }
+.rk-yellow { background: radial-gradient(circle, rgba(255,204,0,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,204,0,0.3) !important; }
+.rk-pink { background: radial-gradient(circle, rgba(255,45,85,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,45,85,0.3) !important; }
+
+@keyframes rkBubbleRiseUp {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { transform: translateY(-110vh) translateX(25px); opacity: 0; }
+}
+
+/* बटन का धड़कने वाला एनीमेशन जो सिर्फ़ वेलकम बटन पर लगेगा */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    function fixAppLayers() {
+        var bubbleContainer = document.querySelector('.rk-bubble-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        // जब पहला पेज (START NOW) सामने दिख रहा हो
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            
+            // 1. बटन एनीमेशन फिक्स करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+            }
+            
+            // 2. बबल्स को ज़बरदस्ती सिर्फ स्प्लैश स्क्रीन के अंदर डालें
+            if(bubbleContainer && splashScreen && bubbleContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(bubbleContainer, splashScreen.firstChild);
+            }
+            
+            if(bubbleContainer) bubbleContainer.className = 'rk-bubble-container rk-bubble-active';
+        } else {
+            // जैसे ही ऐप का मुख्य भाग खुले, बबल्स गायब कर दो
+            if(bubbleContainer) {
+                bubbleContainer.className = 'rk-bubble-container';
+                bubbleContainer.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", fixAppLayers);
+    document.addEventListener("click", function() {
+        setTimeout(fixAppLayers, 100);
+    });
+    setInterval(fixAppLayers, 400);
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- सिर्फ वेलकम पेज के लिए रंग-बिरंगे बबल्स का कंटेनर -->
+<div class="rk-bubble-container">
+    <div class="rk-bubble rk-red" style="left: 12%; width: 14px; height: 14px; animation-delay: 0s; animation-duration: 7s;"></div>
+    <div class="rk-bubble rk-green" style="left: 28%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 10s;"></div>
+    <div class="rk-bubble rk-yellow" style="left: 45%; width: 12px; height: 12px; animation-delay: 1s; animation-duration: 6s;"></div>
+    <div class="rk-bubble rk-pink" style="left: 60%; width: 24px; height: 24px; animation-delay: 4s; animation-duration: 12s;"></div>
+    <div class="rk-bubble rk-red" style="left: 75%; width: 16px; height: 16px; animation-delay: 3s; animation-duration: 8s;"></div>
+    <div class="rk-bubble rk-green" style="left: 88%; width: 15px; height: 15px; animation-delay: 5s; animation-duration: 7s;"></div>
+</div>
+
+<style>
+/* सिर्फ वेलकम स्क्रीन पर बबल्स और बटन को सही लेयर पर दिखाने के लिए */
+#splash-screen {  
+    background-image: none !important; /* हितमैन इमेज सिर्फ पहले पेज से हटेगी */
+    position: fixed !important;
+    z-index: 9999 !important;
+    transition: background 0.8s ease-in-out !important; /* हर सेकंड रंग बदलने पर स्मूथ इफ़ेक्ट देगा */
+}  
+
+/* शुरुआत में बबल्स छिपे रहेंगे */
+.rk-bubble-container {
+    display: none !important;
+}
+
+/* सिर्फ वेलकम पेज पर बबल्स एक्टिव करने के लिए */
+.rk-bubble-active {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 1 !important; 
+    pointer-events: none;
+    display: block !important;
+}
+
+.rk-bubble {
+    position: absolute;
+    bottom: -40px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+    animation: rkBubbleRiseUp 9s infinite linear;
+}
+
+.rk-red { background: radial-gradient(circle, rgba(255,59,48,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,59,48,0.3) !important; }
+.rk-green { background: radial-gradient(circle, rgba(52,199,89,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(52,199,89,0.3) !important; }
+.rk-yellow { background: radial-gradient(circle, rgba(255,204,0,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,204,0,0.3) !important; }
+.rk-pink { background: radial-gradient(circle, rgba(255,45,85,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,45,85,0.3) !important; }
+
+@keyframes rkBubbleRiseUp {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { transform: translateY(-110vh) translateX(25px); opacity: 0; }
+}
+
+/* बटन का धड़कने वाला एनीमेशन */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    // 🔴 🟢 ⚪ 🟡 🔮 आपके पसंदीदा रंगों की लिस्ट
+    var rkColors = ["#ff3b30", "#4cd964", "#ffffff", "#ffcc00", "#ff2d55"];
+    var colorIndex = 0;
+    var colorChangeInterval;
+
+    function startColorChange() {
+        var splashScreen = document.getElementById('splash-screen');
+        if (splashScreen && !colorChangeInterval) {
+            // हर 1 सेकंड (1000 मिलीसेकंड) में रंग बदलने के लिए
+            colorChangeInterval = setInterval(function() {
+                splashScreen.style.setProperty('background', rkColors[colorIndex], 'important');
+                colorIndex = (colorIndex + 1) % rkColors.length;
+            }, 1000);
+        }
+    }
+
+    function stopColorChange() {
+        if (colorChangeInterval) {
+            clearInterval(colorChangeInterval);
+            colorChangeInterval = null;
+        }
+    }
+
+    function fixAppLayers() {
+        var bubbleContainer = document.querySelector('.rk-bubble-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            
+            // 1. बटन एनीमेशन चालू करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+            }
+            
+            // 2. बबल्स को स्प्लैश स्क्रीन के अंदर डालें
+            if(bubbleContainer && splashScreen && bubbleContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(bubbleContainer, splashScreen.firstChild);
+            }
+            
+            if(bubbleContainer) bubbleContainer.className = 'rk-bubble-container rk-bubble-active';
+            
+            // 3. जावास्क्रिप्ट कलर चेंजर चालू करें
+            startColorChange();
+        } else {
+            // दूसरा पेज खुलने पर सब बंद करें
+            if(bubbleContainer) {
+                bubbleContainer.className = 'rk-bubble-container';
+                bubbleContainer.style.setProperty('display', 'none', 'important');
+            }
+            stopColorChange();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", fixAppLayers);
+    document.addEventListener("click", function() {
+        setTimeout(fixAppLayers, 100);
+    });
+    setInterval(fixAppLayers, 400);
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- सिर्फ वेलकम पेज के लिए रंग-बिरंगे बबल्स का कंटेनर -->
+<div class="rk-bubble-container">
+    <div class="rk-bubble rk-red" style="left: 12%; width: 14px; height: 14px; animation-delay: 0s; animation-duration: 7s;"></div>
+    <div class="rk-bubble rk-green" style="left: 28%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 10s;"></div>
+    <div class="rk-bubble rk-yellow" style="left: 45%; width: 12px; height: 12px; animation-delay: 1s; animation-duration: 6s;"></div>
+    <div class="rk-bubble rk-pink" style="left: 60%; width: 24px; height: 24px; animation-delay: 4s; animation-duration: 12s;"></div>
+    <div class="rk-bubble rk-red" style="left: 75%; width: 16px; height: 16px; animation-delay: 3s; animation-duration: 8s;"></div>
+    <div class="rk-bubble rk-green" style="left: 88%; width: 15px; height: 15px; animation-delay: 5s; animation-duration: 7s;"></div>
+</div>
+
+<style>
+/* ⚠️ मखमली (Smooth Fade) इफ़ेक्ट देने के लिए खास स्टाइलिंग */
+#splash-screen {  
+    background-image: none !important; /* हितमैन इमेज सिर्फ पहले पेज से हटेगी */
+    position: fixed !important;
+    z-index: 9999 !important;
+    
+    /* 🌟 जादू यहाँ है: 1.2 सेकंड का स्मूथ ट्रांज़िशन जो बल्ब जैसा जलना-बुझना पूरी तरह बंद कर देगा */
+    transition: background 1200ms cubic-bezier(0.4, 0, 0.2, 1) !important; 
+}  
+
+/* शुरुआत में बबल्स छिपे रहेंगे */
+.rk-bubble-container {
+    display: none !important;
+}
+
+/* सिर्फ वेलकम पेज पर बबल्स एक्टिव करने के लिए */
+.rk-bubble-active {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 1 !important; 
+    pointer-events: none;
+    display: block !important;
+}
+
+.rk-bubble {
+    position: absolute;
+    bottom: -40px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+    animation: rkBubbleRiseUp 9s infinite linear;
+}
+
+.rk-red { background: radial-gradient(circle, rgba(255,59,48,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,59,48,0.3) !important; }
+.rk-green { background: radial-gradient(circle, rgba(52,199,89,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(52,199,89,0.3) !important; }
+.rk-yellow { background: radial-gradient(circle, rgba(255,204,0,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,204,0,0.3) !important; }
+.rk-pink { background: radial-gradient(circle, rgba(255,45,85,0.5) 0%, transparent 70%) !important; border: 1px solid rgba(255,45,85,0.3) !important; }
+
+@keyframes rkBubbleRiseUp {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { transform: translateY(-110vh) translateX(25px); opacity: 0; }
+}
+
+/* बटन का धड़कने वाला एनीमेशन */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    // 🔴 🟢 ⚪ 🟡 🔮 आपके पसंदीदा रंगों की लिस्ट (शेड्स को थोड़ा और प्रीमियम किया गया है)
+    var rkColors = ["#ff3b30", "#4cd964", "#ffffff", "#ffcc00", "#ff2d55"];
+    var colorIndex = 0;
+    var colorChangeInterval;
+
+    function startColorChange() {
+        var splashScreen = document.getElementById('splash-screen');
+        if (splashScreen && !colorChangeInterval) {
+            // हर 1.5 सेकंड में रंग बदलने का आदेश (ताकि ट्रांज़िशन को पूरा मिक्स होने का समय मिले)
+            colorChangeInterval = setInterval(function() {
+                splashScreen.style.setProperty('background', rkColors[colorIndex], 'important');
+                colorIndex = (colorIndex + 1) % rkColors.length;
+            }, 1500);
+        }
+    }
+
+    function stopColorChange() {
+        if (colorChangeInterval) {
+            clearInterval(colorChangeInterval);
+            colorChangeInterval = null;
+        }
+    }
+
+    function fixAppLayers() {
+        var bubbleContainer = document.querySelector('.rk-bubble-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            
+            // 1. बटन एनीमेशन चालू करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+            }
+            
+            // 2. बबल्स को स्प्लैश स्क्रीन के अंदर डालें
+            if(bubbleContainer && splashScreen && bubbleContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(bubbleContainer, splashScreen.firstChild);
+            }
+            
+            if(bubbleContainer) bubbleContainer.className = 'rk-bubble-container rk-bubble-active';
+            
+            // 3. जावास्क्रिप्ट कलर चेंजर चालू करें
+            startColorChange();
+        } else {
+            if(bubbleContainer) {
+                bubbleContainer.className = 'rk-bubble-container';
+                bubbleContainer.style.setProperty('display', 'none', 'important');
+            }
+            stopColorChange();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", fixAppLayers);
+    document.addEventListener("click", function() {
+        setTimeout(fixAppLayers, 100);
+    });
+    setInterval(fixAppLayers, 400);
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<script>
+(function() {
+    // 🗣️ एकदम सटीक और पक्का काम करने वाला वेलकम टोन जेनरेटर
+    function playRealWelcomeSound() {
+        try {
+            var AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            
+            var ctx = new AudioContext();
+            
+            // 🎵 एक साथ दो अलग फ्रीक्वेंसी चलाकर 'टिंग-टोंग' जैसा सुंदर डिजिटल वेलकम टोन बनाएंगे
+            var now = ctx.currentTime;
+            
+            // पहली टोन (High Pitch)
+            var osc1 = ctx.createOscillator();
+            var gain1 = ctx.createGain();
+            osc1.type = 'sine';
+            osc1.frequency.setValueAtTime(523.25, now); // C5 नोट (मधुर स्वर)
+            gain1.gain.setValueAtTime(0.2, now);
+            gain1.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+            osc1.connect(gain1);
+            gain1.connect(ctx.destination);
+            
+            // दूसरी टoner (थोड़ी देर बाद - टोंग इफ़ेक्ट)
+            var osc2 = ctx.createOscillator();
+            var gain2 = ctx.createGain();
+            osc2.type = 'sine';
+            osc2.frequency.setValueAtTime(659.25, now + 0.08); // E5 नोट
+            gain2.gain.setValueAtTime(0.2, now + 0.08);
+            gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.38);
+            osc2.connect(gain2);
+            gain2.connect(ctx.destination);
+            
+            osc1.start(now);
+            osc1.stop(now + 0.3);
+            
+            osc2.start(now + 0.08);
+            osc2.stop(now + 0.38);
+        } catch(e) {
+            console.log("Audio contextual block handled.");
+        }
+    }
+
+    // स्क्रीन पर "Continue to App" बटन को ढूँढने और उसपर साउंड सेट करने का मास्टर लॉजिक
+    function setupContinueButtonVoice() {
+        // बटन को खोजने के लिए क्लास और टेक्स्ट दोनों तरीके का इस्तेमाल
+        var btn = document.querySelector('.btn-continue') || document.getElementById('btn-continue');
+        
+        // अगर बटन क्लास से न मिले तो पूरे ऐप में टेक्स्ट से खोजो
+        if (!btn) {
+            var elements = document.querySelectorAll('button, span, div, a');
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].innerText && elements[i].innerText.trim() === "Continue to App") {
+                    btn = elements[i];
+                    break;
+                }
+            }
+        }
+
+        // जैसे ही बटन मिले, उसपर सुरक्षा के साथ इवेंट लगा दो
+        if (btn && !btn.dataset.voiceBound) {
+            btn.dataset.voiceBound = "true";
+            
+            // मोबाइल टच और माउस क्लिक दोनों पर आवाज़ चालू होगी
+            btn.addEventListener('click', playRealWelcomeSound);
+            btn.addEventListener('touchstart', playRealWelcomeSound);
+        }
+    }
+
+    // ऐप शुरू होते ही और बटन के पॉपअप में लोड होने तक लगातार चेक करता रहेगा
+    document.addEventListener("DOMContentLoaded", setupContinueButtonVoice);
+    setInterval(setupContinueButtonVoice, 300); // 300ms में लगातार अपडेट रखेगा
+})();
+</script>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<script>
+(function() {
+    // 🗣️ आपका नाम "RAVIKISHAN" बेहद स्वीट आवाज़ में बोलने और टोन जेनरेट करने का फंक्शन
+    function playRavikishanVoice() {
+        try {
+            // 1. पहले एक बहुत ही मीठी और हल्की डिजिटल टोन बजेगी (यूजर का ध्यान खींचने के लिए)
+            var AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (AudioContext) {
+                var ctx = new AudioContext();
+                var now = ctx.currentTime;
+                var osc = ctx.createOscillator();
+                var gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(880, now); // मधुर ए-नोट स्वर
+                gain.gain.setValueAtTime(0.1, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start(now);
+                osc.stop(now + 0.2);
+            }
+
+            // 2. टोन बजने के तुरंत बाद आपका नाम साफ़ अक्षरों में बोला जाएगा
+            if ('speechSynthesis' in window) {
+                // अगर पहले से कोई आवाज़ चल रही है तो उसे रोकें
+                window.speechSynthesis.cancel();
+
+                var speech = new SpeechSynthesisUtterance();
+                speech.text = "WELCOME, RAVIKISHAN"; // आपका नाम यहाँ सेट है
+                speech.lang = "en-IN";   // इंग्लिश-इंडिया टोन (ताकि नाम का उच्चारण बिल्कुल सही और साफ़ हो)
+                speech.rate = 0.95;       // बोलने की स्पीड (थोड़ी सी धीमी ताकि सुनने में मीठी लगे)
+                speech.pitch = 1.15;      // पिच को थोड़ा बढ़ाया है ताकि आवाज़ एकदम सॉफ़्ट और स्वीट रहे
+                
+                window.speechSynthesis.speak(speech);
+            }
+        } catch(e) {
+            console.log("Voice Synthesis boundary managed.");
+        }
+    }
+
+    // "START NOW" बटन को खोजकर उसपर आपका नाम बोलने वाला इवेंट सेट करने का लॉजिक
+    function setupNameVoiceRoute() {
+        var startBtn = document.querySelector('.btn-start');
+        
+        if (!startBtn) {
+            var elements = document.querySelectorAll('button, input, a');
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].innerText && elements[i].innerText.trim() === "START NOW") {
+                    startBtn = elements[i];
+                    break;
+                }
+            }
+        }
+
+        // बटन मिलते ही उसपर क्लिक और टच दोनों एक्टिवेट करें
+        if (startBtn && !startBtn.dataset.nameVoiceBound) {
+            startBtn.dataset.nameVoiceBound = "true";
+            
+            startBtn.addEventListener('click', playRavikishanVoice);
+            startBtn.addEventListener('touchstart', playRavikishanVoice);
+        }
+    }
+
+    // ऐप लोड होने पर और लगातार बैकग्राउंड में बटन को ट्रैक करने के लिए
+    document.addEventListener("DOMContentLoaded", setupNameVoiceRoute);
+    setInterval(setupNameVoiceRoute, 400);
+})();
+</script>
+<!-- === कोडिंग समाप्त === -->
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<script>
+(function() {
+    // 🎵 फोन की ऑडियो चिप से सीधे "Go/चलो" जैसी कड़क डबल-बीप साउंड जेनरेट करने का फंक्शन
+    function playCyberGoSound() {
+        try {
+            var AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            
+            var ctx = new AudioContext();
+            var now = ctx.currentTime;
+            
+            // 🚀 पहली छोटी बीप (Ready...)
+            var osc1 = ctx.createOscillator();
+            var gain1 = ctx.createGain();
+            osc1.type = 'triangle'; // थोड़ी कड़क और रोबोटिक ध्वनि तरंग
+            osc1.frequency.setValueAtTime(600, now); 
+            gain1.gain.setValueAtTime(0.25, now);
+            gain1.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+            osc1.connect(gain1);
+            gain1.connect(ctx.destination);
+            
+            // 🏁 दूसरी लंबी और तेज बीप (GO / चलो!) - जो ठीक पहली बीप के तुरंत बाद बजेगी
+            var osc2 = ctx.createOscillator();
+            var gain2 = ctx.createGain();
+            osc2.type = 'sawtooth'; // एकदम गेमिंग और रेस स्टार्ट जैसा कड़क साउंड
+            osc2.frequency.setValueAtTime(900, now + 0.08); // हाई पिच गो इफ़ेक्ट
+            gain2.gain.setValueAtTime(0.3, now + 0.08);
+            gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+            osc2.connect(gain2);
+            gain2.connect(ctx.destination);
+            
+            osc1.start(now);
+            osc1.stop(now + 0.08);
+            
+            osc2.start(now + 0.08);
+            osc2.stop(now + 0.25);
+        } catch(e) {
+            console.log("Audio matrix node handled.");
+        }
+    }
+
+    // डैशबोर्ड के सभी 8 ऐप बटन्स पर यह साउंड सेट करने का लॉजिक
+    function setupAppButtonsGoVoice() {
+        var appButtons = document.querySelectorAll('.link-button');
+        
+        for (var i = 0; i < appButtons.length; i++) {
+            var btn = appButtons[i];
+            
+            if (!btn.dataset.cyberGoBound) {
+                btn.dataset.cyberGoBound = "true";
+                
+                // क्लिक और टच दोनों पर तुरंत सायरन बजेगा
+                btn.addEventListener('click', playCyberGoSound);
+                btn.addEventListener('touchstart', playCyberGoSound);
+            }
+        }
+    }
+
+    // लोड होने पर और लगातार बैकग्राउंड में ट्रैक रखने के लिए
+    document.addEventListener("DOMContentLoaded", setupAppButtonsGoVoice);
+    setInterval(setupAppButtonsGoVoice, 400);
+})();
+</script>
+<!-- === कोडिंग समाप्त === -->
+<!-- === पुराना ग्रिड कोड हटाकर इसे सबसे नीचे पेस्ट करें === -->
+<style>
+/* ⚠️ यह कोड आपके पुराने कोड के डिज़ाइन को पूरी तरह ओवरराइड करके बटन्स को २ कॉलम में सेट करेगा */
+#main-content {
+    display: grid !important; /* पुराना फ्लेक्स बॉक्स हटाकर ग्रिड चालू किया */
+    grid-template-columns: repeat(2, 1fr) !important; /* एक लाइन में बराबर 2 कॉलम */
+    grid-gap: 12px !important; /* बटन्स के बीच का सुंदर गैप */
+    padding: 15px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* टाइटल (SELECT OPTION) को पूरे दोनों कॉलम में ऊपर फैलाना */
+.dashboard-title {
+    grid-column: span 2 !important; /* यह ग्रिड से बाहर रहकर ऊपर सेंटर में रहेगा */
+    margin-bottom: 20px !important;
+}
+
+/* सभी बटन्स को अगल-बगल में फिट करने की स्टाइल */
+#main-content button.link-button {
+    display: flex !important;
+    width: 100% !important; /* ग्रिड कॉलम के हिसाब से ऑटोमैटिक सेट होगा */
+    margin: 0 !important; /* पुराना ऊपर-नीचे वाला मार्जिन खत्म */
+    font-size: 0.85rem !important; /* मोबाइल पर नाम न कटे इसलिए थोड़ा छोटा किया */
+    padding: 12px 8px !important; /* अंदर की जगह एकदम परफेक्ट */
+    height: 70px !important; /* सभी बटन्स की ऊँचाई एक बराबर */
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    white-space: normal !important; /* टेक्स्ट लंबा होने पर नीचे की लाइन में आ जाएगा */
+}
+
+/* 🚨 आपका IMPORTANT नोटिस बॉक्स ग्रिड में न फंसे, इसलिए इसे पूरे दोनों कॉलम में नीचे फैलाया */
+.notice-container {
+    grid-column: span 2 !important; /* यह नीचे पूरी चौड़ाई में दिखेगा */
+    margin-top: 20px !important;
+    width: 100% !important;
+}
+</style>
+<!-- === यहाँ से कॉपी करें और अपने पुराने कोड में सबसे नीचे पेस्ट करें === -->
+<!-- रंग-बिरंगे फूलों की बरसात का कंटेनर -->
+<div class="rk-flower-container">
+    <!-- विभिन्न रंगों और आकृतियों के फूल -->
+    <div class="rk-flower rk-fl-pink" style="left: 8%; font-size: 24px; animation-delay: 0s; animation-duration: 8s;">🌸</div>
+    <div class="rk-flower rk-fl-yellow" style="left: 22%; font-size: 20px; animation-delay: 2s; animation-duration: 11s;">🌼</div>
+    <div class="rk-flower rk-fl-red" style="left: 38%; font-size: 26px; animation-delay: 1s; animation-duration: 9s;">🌹</div>
+    <div class="rk-flower rk-fl-white" style="left: 52%; font-size: 18px; animation-delay: 4s; animation-duration: 12s;">💮</div>
+    <div class="rk-flower rk-fl-pink" style="left: 68%; font-size: 22px; animation-delay: 3s; animation-duration: 7s;">🌺</div>
+    <div class="rk-flower rk-fl-yellow" style="left: 82%; font-size: 25px; animation-delay: 5s; animation-duration: 10s;">🌼</div>
+    <div class="rk-flower rk-fl-red" style="left: 15%; font-size: 20px; animation-delay: 6s; animation-duration: 8s;">🌹</div>
+    <div class="rk-flower rk-fl-white" style="left: 60%; font-size: 23px; animation-delay: 2.5s; animation-duration: 11s;">🌸</div>
+    <div class="rk-flower rk-fl-pink" style="left: 45%; font-size: 28px; animation-delay: 7s; animation-duration: 13s;">🌺</div>
+    <div class="rk-flower rk-fl-yellow" style="left: 92%; font-size: 16px; animation-delay: 1.5s; animation-duration: 6s;">🌼</div>
+    <div class="rk-flower rk-fl-yellow" style="left: 92%; font-size: 16px; animation-delay: 1.5s; animation-duration: 6s;">🎉</div>
+</div>
+
+<style>
+/* डिफ़ॉल्ट रूप से फूल हर जगह छिपे रहेंगे */
+.rk-flower-container {
+    display: none !important;
+}
+
+/* सिर्फ वेलकम पेज (Splash Screen) पर एक्टिव होने के लिए */
+.rk-flower-active {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 2 !important; /* रंग बदलने वाले बैकग्राउंड के ऊपर दिखने के लिए */
+    pointer-events: none;
+    display: block !important;
+}
+
+/* फूलों की कॉमन स्टाइलिंग और गिरने का तरीका */
+.rk-flower {
+    position: absolute;
+    top: -50px; /* स्क्रीन के ऊपर से गिरना शुरू होंगे */
+    animation: rkFlowerFall 10s infinite linear;
+    opacity: 0;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+
+/* अलग-अलग फूलों के रंगों पर हल्का ग्लो इफेक्ट */
+.rk-fl-pink { text-shadow: 0 0 8px rgba(255, 105, 180, 0.6); }
+.rk-fl-yellow { text-shadow: 0 0 8px rgba(255, 215, 0, 0.6); }
+.rk-fl-red { text-shadow: 0 0 8px rgba(255, 0, 0, 0.5); }
+.rk-fl-white { text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); }
+
+/* ऊपर से नीचे गिरने और हवा में लहराते हुए (Sway & Rotate) घूमने का एनीमेशन */
+@keyframes rkFlowerFall {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.85;
+    }
+    90% {
+        opacity: 0.85;
+    }
+    100% {
+        transform: translateY(110vh) translateX(40px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* वेलकम पेज पर मखमली (Smooth Fade) इफ़ेक्ट देने के लिए खास स्टाइलिंग */
+#splash-screen {  
+    background-image: none !important; /* हितमैन इमेज सिर्फ पहले पेज से हटेगी */
+    position: fixed !important;
+    z-index: 9999 !important;
+    transition: background 1200ms cubic-bezier(0.4, 0, 0.2, 1) !important; 
+}  
+
+/* बटन का धड़कने (Pulse) वाला एनीमेशन */
+@keyframes rkButtonPulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+}
+</style>
+
+<script>
+(function() {
+    // 🔴 🟢 ⚪ 🟡 🔮 ऑटोमैटिक रंग बदलने की लिस्ट
+    var rkColors = ["#ff3b30", "#4cd964", "#ffffff", "#ffcc00", "#ff2d55"];
+    var colorIndex = 0;
+    var colorChangeInterval;
+
+    // 🎵 बेहद स्वीट और लवली चाइम आवाज़ जेनरेट करने का फंक्शन
+    function playSweetStartSound() {
+        try {
+            var AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            
+            var ctx = new AudioContext();
+            var now = ctx.currentTime;
+            
+            var osc1 = ctx.createOscillator();
+            var gain1 = ctx.createGain();
+            osc1.type = 'sine';
+            osc1.frequency.setValueAtTime(1318.51, now); 
+            gain1.gain.setValueAtTime(0.15, now);
+            gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+            osc1.connect(gain1);
+            gain1.connect(ctx.destination);
+            
+            var osc2 = ctx.createOscillator();
+            var gain2 = ctx.createGain();
+            osc2.type = 'sine';
+            osc2.frequency.setValueAtTime(1567.98, now + 0.06); 
+            gain2.gain.setValueAtTime(0.12, now + 0.06);
+            gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.46);
+            osc2.connect(gain2);
+            gain2.connect(ctx.destination);
+            
+            osc1.start(now); osc1.stop(now + 0.4);
+            osc2.start(now + 0.06); osc2.stop(now + 0.46);
+        } catch(e) {}
+    }
+
+    function startColorChange() {
+        var splashScreen = document.getElementById('splash-screen');
+        if (splashScreen && !colorChangeInterval) {
+            colorChangeInterval = setInterval(function() {
+                splashScreen.style.setProperty('background', rkColors[colorIndex], 'important');
+                colorIndex = (colorIndex + 1) % rkColors.length;
+            }, 1500);
+        }
+    }
+
+    function stopColorChange() {
+        if (colorChangeInterval) {
+            clearInterval(colorChangeInterval);
+            colorChangeInterval = null;
+        }
+    }
+
+    function manageFlowerShower() {
+        var flowerContainer = document.querySelector('.rk-flower-container');
+        var startBtn = document.querySelector('.btn-start');
+        var splashScreen = document.getElementById('splash-screen');
+
+        if (startBtn && startBtn.offsetWidth > 0 && window.getComputedStyle(startBtn).display !== 'none') {
+            
+            // 1. बटन एनीमेशन और साउंड सेट करें
+            if(startBtn && !startBtn.style.animation.includes('rkButtonPulse')) {
+                startBtn.style.setProperty('animation', 'rkButtonPulse 2s infinite ease-in-out', 'important');
+                startBtn.addEventListener('click', playSweetStartSound);
+                startBtn.addEventListener('touchstart', playSweetStartSound);
+            }
+            
+            // 2. फूलों को स्प्लैश स्क्रीन के अंदर डालें
+            if(flowerContainer && splashScreen && flowerContainer.parentNode !== splashScreen) {
+                splashScreen.insertBefore(flowerContainer, splashScreen.firstChild);
+            }
+            
+            if(flowerContainer) flowerContainer.className = 'rk-flower-container rk-flower-active';
+            
+            // 3. जावास्क्रिप्ट कलर चेंजर चालू करें
+            startColorChange();
+        } else {
+            // दूसरा पेज खुलने पर फूल गायब कर दो
+            if(flowerContainer) {
+                flowerContainer.className = 'rk-flower-container';
+                flowerContainer.style.setProperty('display', 'none', 'important');
+            }
+            stopColorChange();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", manageFlowerShower);
+    document.addEventListener("click", function() {
+        setTimeout(manageFlowerShower, 100);
+    });
+    setInterval(manageFlowerShower, 400);
+})();
+</script>
+<!-- === यहाँ से फ्रेश कोड कॉपी करें और सबसे नीचे पेस्ट करें === -->
+<!-- रंग-बिरंगे छोटे पार्टिकल्स और कड़क बिजली का फ्रेश कंटेनर -->
+<div class="rk-menu-effects-container">
+    <div class="rk-real-lightning"></div>
+    <div class="rk-small-particle" style="left: 5%; background: #ff3b30; animation-delay: 0s; animation-duration: 4s;"></div>
+    <div class="rk-small-particle" style="left: 15%; background: #4cd964; animation-delay: 1.5s; animation-duration: 5s;"></div>
+    <div class="rk-small-particle" style="left: 25%; background: #00f0ff; animation-delay: 0.5s; animation-duration: 3.5s;"></div>
+    <div class="rk-small-particle" style="left: 35%; background: #ffcc00; animation-delay: 2s; animation-duration: 4.5s;"></div>
+    <div class="rk-small-particle" style="left: 45%; background: #ff2d55; animation-delay: 1s; animation-duration: 4s;"></div>
+    <div class="rk-small-particle" style="left: 55%; background: #ffffff; animation-delay: 2.5s; animation-duration: 5.5s;"></div>
+    <div class="rk-small-particle" style="left: 65%; background: #a83294; animation-delay: 0.2s; animation-duration: 3.8s;"></div>
+    <div class="rk-small-particle" style="left: 75%; background: #00ff66; animation-delay: 1.8s; animation-duration: 4.2s;"></div>
+    <div class="rk-small-particle" style="left: 85%; background: #ff5722; animation-delay: 0.8s; animation-duration: 4.8s;"></div>
+    <div class="rk-small-particle" style="left: 95%; background: #e91e63; animation-delay: 2.2s; animation-duration: 3.6s;"></div>
+</div>
+
+<style>
+/* डिफ़ॉल्ट रूप से इफेक्ट्स हर जगह छिपे रहेंगे */
+.rk-menu-effects-container {
+    display: none !important;
+}
+
+/* यह लेयर सिर्फ SELECT OPTION (डैशबोर्ड) पेज खुलने पर ही एक्टिव होगी */
+.rk-menu-effects-active {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    z-index: 1 !important; /* हितमैन इमेज के ऊपर और बटन्स के पीछे */
+    pointer-events: none;
+    display: block !important;
+}
+
+/* ⚡ हर 3 सेकंड में अचानक कड़कने वाली असली गेमिंग बिजली */
+.rk-real-lightning {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: #ffffff; 
+    opacity: 0;
+    animation: rkThunderStrike 3s infinite linear !important;
+}
+
+@keyframes rkThunderStrike {
+    /* पहले 2.5 सेकंड तक स्क्रीन शांत रहेगी */
+    0%, 84% { 
+        opacity: 0; 
+        background-color: transparent;
+        box-shadow: none;
+    }
+    /* अचानक पहला तेज कड़क झटका */
+    85% { 
+        opacity: 0.9; 
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: inset 0 0 50px rgba(0, 240, 255, 0.6); 
+    }
+    /* मिलीसेकंड का गैप */
+    87% { 
+        opacity: 0.2; 
+        background-color: rgba(0, 240, 255, 0.2); 
+    }
+        }
+    /* दूसरा सबसे जोरदार कड़कड़ाता हुआ झटका */
+    89% { 
+        opacity: 0.95; 
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: inset 0 0 70px rgba(0, 240, 255, 0.8);
+    }
+    /* धीरे से रंग गायब होना */
+    93% { 
+        opacity: 0.3; 
+        background-color: rgba(255, 0, 127, 0.1); 
+    }
+    100% { 
+        opacity: 0; 
+        background-color: transparent;
+    }
+}
+
+/* एकदम बारीक चमकदार पार्टिकल्स */
+.rk-small-particle {
+    position: absolute;
+    top: -20px;
+    width: 4px !important;  
+    height: 4px !important; 
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 8px currentcolor; 
+    animation: rkParticleRain 5s infinite linear;
+}
+
+@keyframes rkParticleRain {
+    0% { transform: translateY(0) scale(0.5); opacity: 0; }
+    10%, 90% { opacity: 0.8; }
+    100% { transform: translateY(105vh) scale(1); opacity: 0; }
+}
+</style>
+
+<script>
+(function() {
+    function manageMenuEffects() {
+        var effectsContainer = document.querySelector('.rk-menu-effects-container');
+        var mainContent = document.getElementById('main-content');
+
+        // चेक करें कि क्या यूजर मेनू/डैशबोर्ड वाले पेज पर आ चुका है
+        if (mainContent && mainContent.offsetWidth > 0 && window.getComputedStyle(mainContent).display !== 'none') {
+            
+            // कंटेनर को सही जगह अरेंज करना
+            if(effectsContainer && mainContent.parentNode && effectsContainer.parentNode !== mainContent.parentNode) {
+                mainContent.parentNode.insertBefore(effectsContainer, mainContent);
+            }
+            
+            if(effectsContainer) effectsContainer.className = 'rk-menu-effects-container rk-menu-effects-active';
+        } else {
+            // स्प्लैश स्क्रीन या टेलीग्राम पेज पर इसे पूरी तरह बंद रखना
+            if(effectsContainer) {
+                effectsContainer.className = 'rk-menu-effects-container';
+                effectsContainer.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", manageMenuEffects);
+    document.addEventListener("click", function() {
+        setTimeout(manageMenuEffects, 100);
+    });
+    setInterval(manageMenuEffects, 400);
+})();
+</script>
+<!-- === कोडिंग समाप्त === -->
+<!-- === यहाँ से फ्रेश कोड कॉपी करें और सबसे नीचे पेस्ट करें === -->
+<!-- रंग-बिरंगे छोटे पार्टिकल्स और असली टेढ़ी-मेढ़ी बिजली का कंटेनर -->
+<div class="rk-menu-effects-container">
+    <!-- असली बादलों वाली बिजली कड़काने के लिए कैनवास -->
+    <canvas id="rkLightningCanvas"></canvas>
+    
+    <div class="rk-small-particle" style="left: 5%; background: #ff3b30; animation-delay: 0s; animation-duration: 4s;"></div>
+    <div class="rk-small-particle" style="left: 15%; background: #4cd964; animation-delay: 1.5s; animation-duration: 5s;"></div>
+    <div class="rk-small-particle" style="left: 25%; background: #00f0ff; animation-delay: 0.5s; animation-duration: 3.5s;"></div>
+    <div class="rk-small-particle" style="left: 35%; background: #ffcc00; animation-delay: 2s; animation-duration: 4.5s;"></div>
+    <div class="rk-small-particle" style="left: 45%; background: #ff2d55; animation-delay: 1s; animation-duration: 4s;"></div>
+    <div class="rk-small-particle" style="left: 55%; background: #ffffff; animation-delay: 2.5s; animation-duration: 5.5s;"></div>
+    <div class="rk-small-particle" style="left: 65%; background: #a83294; animation-delay: 0.2s; animation-duration: 3.8s;"></div>
+    <div class="rk-small-particle" style="left: 75%; background: #00ff66; animation-delay: 1.8s; animation-duration: 4.2s;"></div>
+    <div class="rk-small-particle" style="left: 85%; background: #ff5722; animation-delay: 0.8s; animation-duration: 4.8s;"></div>
+    <div class="rk-small-particle" style="left: 95%; background: #e91e63; animation-delay: 2.2s; animation-duration: 3.6s;"></div>
+</div>
+
+<style>
+/* डिफ़ॉल्ट रूप से इफेक्ट्स हर जगह छिपे रहेंगे */
+.rk-menu-effects-container {
+    display: none !important;
+}
+
+/* यह लेयर सिर्फ SELECT OPTION (डैशबोर्ड) पेज खुलने पर ही एक्टिव होगी */
+.rk-menu-effects-active {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    z-index: 1 !important; /* हितमैन इमेज के ऊपर और बटन्स के पीछे */
+    pointer-events: none;
+    display: block !important;
+}
+
+#rkLightningCanvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+/* एकदम बारीक चमकदार पार्टिकल्स */
+.rk-small-particle {
+    position: absolute;
+    top: -20px;
+    width: 4px !important;  
+    height: 4px !important; 
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 8px currentcolor; 
+    animation: rkParticleRain 5s infinite linear;
+}
+
+@keyframes rkParticleRain {
+    0% { transform: translateY(0) scale(0.5); opacity: 0; }
+    10%, 90% { opacity: 0.8; }
+    100% { transform: translateY(105vh) scale(1); opacity: 0; }
+}
+</style>
+
+<script>
+(function() {
+    var canvas = document.getElementById('rkLightningCanvas');
+    var ctx = canvas.getContext('2d');
+    var lightningTimer = null;
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // ⚡ असली टेढ़ी-मेढ़ी बिजली (Lightning Path) ड्रॉ करने का एडवांस लॉजिक
+    function createLightningBranch(startX, startY, endX, endY, segments, displace) {
+        if (segments < 1) return;
+
+        var midX = (startX + endX) / 2;
+        var midY = (startY + endY) / 2;
+        
+        // टेढ़ा-मेढ़ा (Jagged) करने के लिए रैंडम बदलाव
+        midX += (Math.random() - 0.5) * displace;
+        midY += (Math.random() - 0.5) * displace;
+
+        // मुख्य रेखा को ड्रा करना
+        ctx.beginPath();
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(midX, midY);
+        ctx.lineTo(endX, endY);
+        
+        // नीली-सफ़ेद चमकदार नियॉन ग्लो
+        ctx.strokeStyle = 'rgba(230, 245, 255, 0.95)';
+        ctx.lineWidth = Math.random() * 2 + 1;
+        ctx.shadowColor = 'rgba(0, 180, 255, 0.8)';
+        ctx.shadowBlur = 15;
+        ctx.stroke();
+
+        // छोटी शाखाएं (Sub-branches) जो बादलों से निकलती हैं
+        if (Math.random() > 0.75) {
+            createLightningBranch(midX, midY, midX + (Math.random() - 0.5) * 80, midY + 40, segments - 1, displace / 1.5);
+        }
+
+        createLightningBranch(startX, startY, midX, midY, segments - 1, displace / 2);
+        createLightningBranch(midX, midY, endX, endY, segments - 1, displace / 2);
+    }
+
+    // बिजली कड़काने और स्क्रीन पर फ्लैश इफ़ेक्ट देने का मुख्य लूप
+    function triggerRealThunder() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // 1. स्क्रीन पर एक बहुत हल्का सा बैकग्राउंड फ्लैश (बादल चमकना)
+        ctx.fillStyle = 'rgba(0, 150, 255, 0.08)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // 2. बिजली गिरने की शुरुआती जगह (आसमान में रैंडम X पॉइंट)
+        var startX = Math.random() * canvas.width;
+        var startY = 0;
+        var endX = startX + (Math.random() - 0.5) * 150;
+        var endY = canvas.height * 0.7; // आधी या पूरी स्क्रीन तक गिरेगी
+
+        // टेढ़ी-मेढ़ी बिजली ड्रॉ करें
+        createLightningBranch(startX, startY, endX, endY, 5, 120);
+
+        // 3. डबल स्ट्राइक इफ़ेक्ट (50 मिलीसेकंड बाद दोबारा कड़केगी)
+        setTimeout(function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (Math.random() > 0.3) {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                createLightningBranch(startX, startY, endX + (Math.random() - 0.5) * 40, endY, 5, 80);
+            }
+            // 80 मिलीसेकंड में बिजली गायब (एकदम अचानक गायब)
+            setTimeout(function() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }, 80);
+        }, 50);
+    }
+
+    function manageMenuEffects() {
+        var effectsContainer = document.querySelector('.rk-menu-effects-container');
+        var mainContent = document.getElementById('main-content');
+
+        if (mainContent && mainContent.offsetWidth > 0 && window.getComputedStyle(mainContent).display !== 'none') {
+            
+            if(effectsContainer && mainContent.parentNode && effectsContainer.parentNode !== mainContent.parentNode) {
+                mainContent.parentNode.insertBefore(effectsContainer, mainContent);
+                resizeCanvas();
+            }
+            
+            if(effectsContainer && !effectsContainer.classList.contains('rk-menu-effects-active')) {
+                effectsContainer.className = 'rk-menu-effects-container rk-menu-effects-active';
+                // ⏱️ हर 3 सेकंड (3000ms) पर ऑटोमैटिक थंडर स्ट्राइक चालू
+                if (!lightningTimer) {
+                    lightningTimer = setInterval(triggerRealThunder, 3000);
+                }
+            }
+        } else {
+            if(effectsContainer) {
+                effectsContainer.className = 'rk-menu-effects-container';
+                effectsContainer.style.setProperty('display', 'none', 'important');
+            }
+            if (lightningTimer) {
+                clearInterval(lightningTimer);
+                lightningTimer = null;
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", manageMenuEffects);
+    document.addEventListener("click", function() {
+        setTimeout(manageMenuEffects, 100);
+    });
+    setInterval(manageMenuEffects, 400);
+})();
+</script>
+<!-- ======================================================= -->
+<!-- 🔥 AUTOMATIC KEY SYSTEM OVERRIDE - BY ETHICAL BOY APP 🔥 -->
+<!-- ======================================================= -->
+<script>
+(function() {
+    // 1. Aapke purane logic ko block karke naya verification system lagana
+    window.closeTelegramPopup = function() {
+        var userKey = document.getElementById("raviAccessKeyField");
+        if (!userKey) return;
+        
+        var enteredValue = userKey.value.trim();
+        var correctKey = "RAVI-9876"; // Strict Validation Key
+
+        if (enteredValue === correctKey) {
+            alert("✅ Access Granted! Welcome to App.");
+            
+            // Purana close animation execute karna
+            const popup = document.getElementById('telegram-popup');  
+            const box = document.getElementById('popup-box');  
+            if (box) box.style.transform = 'scale(0.8)';  
+            if (popup) {
+                popup.style.opacity = '0';  
+                popup.style.visibility = 'hidden';  
+                setTimeout(() => {  
+                    popup.style.display = 'none';  
+                }, 500);  
+            }
+        } else {
+            alert("❌ Galat Key! Kripya sahi key enter karein ya 'Get Key' se task complete karein.");
+        }
+    };
+
+    // 2. Telegram Popup ke andar Input field aur Task Button automatic insert karne ka master logic
+    var injectKeyUI = setInterval(function() {
+        var continueBtn = document.querySelector(".btn-continue");
+        
+        // Agar continue button mil gaya aur uske upar box abhi tak nahi bana hai toh:
+        if (continueBtn && !document.getElementById("raviAccessKeyField")) {
+            
+            var keyContainerDiv = document.createElement("div");
+            keyContainerDiv.style.cssText = "margin: 15px auto; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; border: 1px dashed #0088cc; width: 90%; text-align: center;";
+            
+            keyContainerDiv.innerHTML = `
+                <input type="text" id="raviAccessKeyField" placeholder="Enter Access Key Here..." style="width: 100%; padding: 12px; border: 1px solid #3f3f74; border-radius: 8px; background-color: #0c0c1d; color: #fff; text-align: center; font-size: 15px; margin-bottom: 10px; outline: none; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);">
+                <a href="https://shrinkme.click/ubVddH" target="_blank" style="display: block; background: linear-gradient(90deg, #ea580c, #d97706); color: white; padding: 10px 15px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 13px; margin: 5px auto; width: 90%; box-shadow: 0 4px 10px rgba(234, 88, 12, 0.3);">👉 GET KEY (Task Complete Karein)</a>
+            `;
+            
+            // Continue to App button ke thik upar ise laga dena
+            continueBtn.parentNode.insertBefore(keyContainerDiv, continueBtn);
+            clearInterval(injectKeyUI); // Insert hote hi loop band karein
+        }
+    }, 200);
+})();
+</script>
+<!-- ======================================================= -->
+<!-- ======================================================= -->
+<!-- 🌟 AUTOMATIC FONT FIX & PREMIUM LOOK OVERRIDE 🌟 -->
+<!-- ======================================================= -->
+<style>
+  /* Poore app aur popup ke font ko ekdam clean aur premium banana */
+  *, html, body, div, p, h3, button, a, span, input {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  /* Pop-up ke title ka font size aur spacing thik karna */
+  .popup-title {
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Pop-up ke andar ke description text ko clean aur readable banana */
+  .popup-desc {
+    font-size: 0.80rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    color: #cbd5e1 !important;
+  }
+
+  /* Telegram Notice Box ke font ko set karna */
+  .tg-notice-header {
+    font-size: 0.80rem !important;
+    font-weight: 700 !important;
+  }
+  .tg-notice-body {
+    font-size: 0.8prem !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Continue Button ke text font ko settle karna */
+  .btn-continue {
+    font-size: 0.80rem !important;
+    font-weight: 600 !important;
+  }
+</style>
+<!-- ======================================================= -->
+<!-- ======================================================= -->
+<!-- 🔗 Master Logic: Auto Copy Link on Get Key Click 🔗 -->
+<!-- ======================================================= -->
+<script>
+(function() {
+    var checkGetKeyButton = setInterval(function() {
+        // App ke andar "Get Key" link/button ko dhoondhna
+        var allLinks = document.getElementsByTagName("a");
+        var getKeyBtn = null;
+        
+        for (var i = 0; i < allLinks.length; i++) {
+            if (allLinks[i].textContent.toUpperCase().includes("GET KEY")) {
+                getKeyBtn = allLinks[i];
+                break;
+            }
+        }
+        
+        // Agar button mil gaya toh uspar custom click events attach karna
+        if (getKeyBtn) {
+            var targetLink = "https://shrinkme.click/ubVddH";
+            
+            getKeyBtn.addEventListener("click", function(e) {
+                // 1. Link ko background mein automatic copy karne ka advance logic
+                try {
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(targetLink);
+                    } else {
+                        // Backup Method (Agar security browser copy block kare)
+                        var textarea = document.createElement("textarea");
+                        textarea.value = targetLink;
+                        textarea.style.position = "fixed"; 
+                        textarea.style.left = "-9999px"; 
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(textarea);
+                    }
+                    console.log("Link copied successfully!");
+                } catch (err) {
+                    console.log("Copy restricted by browser privacy.");
+                }
+                
+                // 2. Chhota alert dikhana taaki user ko pata chale link copy ho gaya hai
+                alert("🔗 Link automatically copied to clipboard!");
+            });
+            
+            clearInterval(checkGetKeyButton); // Link setup hote hi loop band karein
+        }
+    }, 300);
+})();
+</script>
+<!-- ======================================================= -->
+<!-- ⏱️ PERSISTENT 24-HOUR ACCESS LOCK SYSTEM - master ENGINE ⏱️ -->
+<!-- ======================================================= -->
+<script>
+(function() {
+    var REQUIRED_KEY = "RAVI-9876";
+    var LOCK_DURATION = 24 * 60 * 60 * 1000; // 24 Hours in milliseconds
+
+    // 1. Check access validity immediately upon interface load
+    document.addEventListener("DOMContentLoaded", function() {
+        var keySavedTime = localStorage.getItem("appKeySetupTimestamp");
+        var currentTime = new Date().getTime();
+
+        if (keySavedTime) {
+            // Calculate if the saved token is still within the 24-hour bracket
+            if (currentTime - parseInt(keySavedTime) < LOCK_DURATION) {
+                // Key is valid; permanently suppress the gateway lock dialog immediately
+                var bypassInterval = setInterval(function() {
+                    var gatewayPopup = document.getElementById('telegram-popup');
+                    if (gatewayPopup) {
+                        gatewayPopup.style.display = 'none';
+                        gatewayPopup.style.opacity = '0';
+                        gatewayPopup.style.visibility = 'hidden';
+                        clearInterval(bypassInterval);
+                    }
+                }, 30);
+            } else {
+                // Period expired; purge stale authorization flags from device storage
+                localStorage.removeItem("appKeySetupTimestamp");
+            }
+        }
+    });
+
+    // 2. Override default gateway validation to enforce timestamp tracking
+    var attachTimeTracking = function() {
+        window.checkKeyAndClose = window.validateAndClosePopup = window.closeTelegramPopup = function() {
+            var inputElement = document.getElementById("accessKeyInputField") || 
+                               document.getElementById("raviAccessKeyField") || 
+                               document.getElementById("userInputKey");
+            if (!inputElement) return;
+
+            var userInputValue = inputElement.value.trim();
+
+            if (userInputValue === REQUIRED_KEY) {
+                // Key matches; commit the current precise timestamp to local database storage
+                var verificationTimestamp = new Date().getTime();
+                localStorage.setItem("appKeySetupTimestamp", verificationTimestamp.toString());
+                
+                alert("✅ Access Granted! Token valid for the next 24 hours.");
+                
+                // Trigger standard interface exit animations for the popup wrapper
+                var popupWrapper = document.getElementById('telegram-popup');  
+                var boxContainer = document.getElementById('popup-box');  
+                if (boxContainer) boxContainer.style.transform = 'scale(0.8)';  
+                if (popupWrapper) {
+                    popupWrapper.style.opacity = '0';  
+                    popupWrapper.style.visibility = 'hidden';  
+                    setTimeout(function() { popupWrapper.style.display = 'none'; }, 500);  
+                }
+            } else {
+                alert("❌ Galat Key! Kripya sahi key enter karein ya 'Get Key' se task complete karein.");
+            }
+        };
+    };
+
+    // Ensure the function mappings are intercepted properly across modern web views
+    attachTimeTracking();
+    setTimeout(attachTimeTracking, 200);
+})();
+</script>
+<!-- ======================================================= -->
+<!-- ======================================================= -->
+<!-- 📢 WELCOME PAGE TELEGRAM BUTTON INJECTOR 📢 -->
+<!-- ======================================================= -->
+<style>
+  /* वेलकम पेज वाले टेलीग्राम बटन की प्रीमियम नियॉन डिज़ाइन */
+  .welcome-tg-btn {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 200px !important;
+    margin: 15px auto 0 auto !important;
+    padding: 10px 20px !important;
+    font-size: 0.95rem !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    background: linear-gradient(90deg, #0088cc, #24a1de) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4) !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+  }
+
+  .welcome-tg-btn:hover {
+    transform: scale(1.05) translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 136, 204, 0.6) !important;
+    filter: brightness(1.1) !important;
+  }
+</style>
+
+<script>
+(function() {
+    // वेलकम पेज (Splash Screen) के अंदर बटन इन्जेक्ट करने का लॉजिक
+    var injectWelcomeTg = setInterval(function() {
+        var splashScreen = document.getElementById("splash-screen");
+        var startBtn = document.querySelector(".btn-start");
+
+        // अगर स्प्लैश स्क्रीन और स्टार्ट बटन मिल जाए, और हमारा बटन पहले से न बना हो
+        if (splashScreen && startBtn && !document.getElementById("welcomeTelegramBtn")) {
+            
+            // एक नया <a> टैग (लिंक बटन) बनाना
+            var tgBtn = document.createElement("a");
+            tgBtn.id = "welcomeTelegramBtn";
+            tgBtn.className = "welcome-tg-btn";
+            tgBtn.href = "https://t.me/mod_by_ethicalboy_45";
+            tgBtn.target = "_blank";
+            tgBtn.innerHTML = "✈️ JOIN OUR CHANNEL";
+            
+            // इसे START NOW बटन के ठीक नीचे फिट करना
+            startBtn.parentNode.insertBefore(tgBtn, startBtn.nextSibling);
+            
+            clearInterval(injectWelcomeTg); // बटन लगते ही लूप बंद करें
+        }
+    }, 200);
+})();
+</script>
+<!-- ======================================================= -->
